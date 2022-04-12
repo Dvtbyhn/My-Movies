@@ -28,7 +28,7 @@ class EditMovie extends Component {
 
     onInputChange = (e) => {
         this.setState({
-            [e.target.name]: e.target.name
+            [e.target.name]: e.target.value
         })
     }
 
@@ -60,7 +60,7 @@ class EditMovie extends Component {
                             Movie Name
                         </label>
                         <input className="shadow appearance-none border border-gray-500 rounded w-full py-2 px-3
-             text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" name='name'
+             text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" name = "name"
                             value={this.state.name} onChange={this.onInputChange}
                             type="text" />
                     </div>
