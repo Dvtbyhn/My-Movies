@@ -47,7 +47,7 @@ class EditMovie extends Component {
         }
 
         this.props.onEditMovie(id, updatedMovie)
-        this.props.history.pus("/")
+        this.props.history.push("/")
     }
 
 
